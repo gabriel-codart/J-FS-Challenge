@@ -2,7 +2,14 @@ import { FastifyRequest, FastifyReply } from 'fastify';
 import { Book, createBook } from '../models/book';
 
 // Repositório de Livros
-let books: Book[] = [];
+let books: Book[] = [
+  // Pré-adicionados para testes
+  createBook('1984', 'George Orwell', 1949),
+  createBook('The Great Gatsby', 'F. Scott Fitzgerald', 1925),
+  createBook('To Kill a Mockingbird', 'Harper Lee', 1960),
+  createBook('Pride and Prejudice', 'Jane Austen', 1813),
+  createBook('The Catcher in the Rye', 'J.D. Salinger', 1951),
+];
 
 // Busca todos os Livros
 export const getBooks = async (request: FastifyRequest, reply: FastifyReply) => {

@@ -1,6 +1,7 @@
-# Fastify API
+# Books API
 
-Este é um template para criar APIs utilizando Fastify com TypeScript. Ele já vem configurado com autoload de rotas, documentação Swagger e reinicialização automática usando `tsx`.
+API que permite Criar, Ver, Atualizar e Deletar livros no sistema.
+A princípio a persistência é apenas em tempo de execução, mas, é possível em atualizações conectar a aplicação a um Banco SQL ou NoSQL.
 
 ## Pré-requisitos
 
@@ -26,12 +27,12 @@ O servidor será iniciado em http://localhost:2020 e a documentação Swagger es
 ```plaintext
 src
 ├── controllers
-│   └── itemsController.ts  # Controladores para manipulação de lógica de negócios
+│   └── item.ts  # Controladores para manipulação de lógica de negócios
 ├── models
-│   └── item.ts             # Modelos de dados
+│   └── item.ts  # Modelos de dados
 ├── routes
-│   └── items.ts            # Definição das rotas
-└── index.ts                # Configuração principal do Fastify
+│   └── item.ts  # Definição das rotas
+└── index.ts     # Configuração principal do Fastify
 ```
 
 ## Documentação

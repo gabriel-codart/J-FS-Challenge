@@ -1,4 +1,5 @@
 import Fastify from 'fastify';
+import fastifyCors from '@fastify/cors';
 
 import fastifySwagger from '@fastify/swagger';
 import fastifySwaggerUi from '@fastify/swagger-ui';
@@ -14,6 +15,12 @@ const server = Fastify();
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const routesDir = resolve(__dirname, './routes');
+
+// Configuração do CORS
+server.register(fastifyCors, {
+  origin: 'http://localhost:3000', // Endereço do Frontend
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Métodos permitidos
+});
 
 // Registro do Swagger
 server.register(fastifySwagger, {
@@ -54,5 +61,6 @@ server.listen({ port: PORT }, (err, address) => {
     console.error(err);
     process.exit(1);
   }
-  console.log(`Server listening at ${address}`)
+  console.log(`API rodando em: ${address}/api`)
+  console.log(`Documentação disponível em: ${address}/docs`)
 });
