@@ -1,4 +1,4 @@
-# Books API
+# Book Manager API
 
 API que permite Criar, Ver, Atualizar e Deletar livros no sistema.
 A princípio a persistência é apenas em tempo de execução, mas, é possível em atualizações conectar a aplicação a um Banco SQL ou NoSQL.
