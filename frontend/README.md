@@ -6,8 +6,6 @@ Este é o frontend do projeto **Book Manager**, uma aplicação web para gerenci
 
 Para rodar este projeto localmente, siga os passos abaixo:
 
-## Como usar
-
 1. Instale as dependências:
 
     ```bash
