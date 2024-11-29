@@ -2,6 +2,7 @@
 # Book Manager
 
 **Book Manager** é um sistema completo para gerenciar livros. Ele permite adicionar, listar, pesquisar e deletar livros. O projeto é dividido em duas partes: o **frontend** (interface do usuário) e o **backend** (API que gerencia os dados dos livros).
+Para realizar esse pequeno projeto experimental, eu me inspirei no <a href="https://leia-mais.netlify.app/" target="_blank">Leia+</a> (Projeto também de minha autoria), mas busquei cores mais sombrias e escuras. No backend, como já utilizo Fastify em outros projetos, eu reutilizei bastante código, o que agilizou bastante o trabalho. No frontend, como não sou muito habituado com Next.js, para construir essa aplicação eu utilizei alguns conhecimentos modulares de React (que têm certa semelhança) e utilizei algumas IAs para agilizar o preenchimento de algumas partes do código, bem como para identifação e resolução de erros, e é claro o clássico <a href="https://stackoverflow.com/" target="_blank">Stack Oveflow<a>.
 
 ## Funcionalidades
 
