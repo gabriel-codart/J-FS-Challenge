@@ -20,8 +20,7 @@ const HomePage = () => {
           Book Manager
         </Heading>
         <Text fontSize="lg" maxW="600px">
-          Bem-vindo ao **Book Manager**! Gerencie seus livros favoritos com
-          facilidade.
+          Gerencie seus livros favoritos com facilidade.
         </Text>
         <Button
           colorScheme="teal"
